@@ -1,0 +1,16 @@
+@use "./_mixins" as *;
+
+// Variables de couleurs
+$primary-color: #323c43;
+$secondary-color: #252d33;
+$text-color: #ffffff;
+$background-color: #282c34;
+
+// Variables de taille
+$border-radius: getvh(10);
+$popup-width: getvh(500);
+$popup-height: getvh(400);
+
+// Variables de police
+$font-family-zen: 'Zen_Dots', 'Zen Dots', sans-serif;
+$font-family-irongate: 'Irongate', 'Irongate', sans-serif;

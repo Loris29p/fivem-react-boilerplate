@@ -1,0 +1,19 @@
+@use './styles/variables' as vars;
+
+// Reset et base
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: transparent;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.app {
+  @include flex-center;
+  height: 100vh;
+}

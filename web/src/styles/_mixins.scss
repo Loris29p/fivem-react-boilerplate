@@ -1,0 +1,16 @@
+// Mixins pour les flexbox
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+// Fonction pour calculer les vh
+@function getvh($value) {
+  @return calc(0.092592592vh * #{$value});
+}

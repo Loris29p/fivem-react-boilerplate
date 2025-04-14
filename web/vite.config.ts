@@ -8,4 +8,12 @@ export default defineConfig({
   build: {
     outDir: 'build',
   },
+  css: {
+    preprocessorOptions: {
+      scss: {
+        quietDeps: true,
+        additionalData: `@use "./src/styles/variables.scss" as *; @use "./src/styles/_mixins.scss" as *;`,
+      },
+    },
+  },
 });
