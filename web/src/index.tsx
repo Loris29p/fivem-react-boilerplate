@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { VisibilityProvider } from './providers/VisibilityProvider';
+import { BrowserRouter } from 'react-router-dom';
+
 import App from './App';
 import './index.scss';
-import { BrowserRouter } from "react-router-dom";
-
+import { VisibilityProvider } from './providers/VisibilityProvider';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
@@ -13,5 +13,5 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
         <App />
       </BrowserRouter>
     </VisibilityProvider>
-  </React.StrictMode>,
+  </React.StrictMode>
 );

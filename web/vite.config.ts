@@ -11,9 +11,16 @@ export default defineConfig({
   css: {
     preprocessorOptions: {
       scss: {
+        api: 'modern-compiler',
+        silenceDeprecations: ['legacy-js-api'],
         quietDeps: true,
-        additionalData: `@use "./src/styles/variables.scss" as *; @use "./src/styles/_mixins.scss" as *;`,
+        additionalData: `@use "@/styles/variables.scss" as *; @use "@/styles/_mixins.scss" as *;`,
       },
+    },
+  },
+  resolve: {
+    alias: {
+      '@': '/src',
     },
   },
 });
